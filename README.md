@@ -10,7 +10,7 @@ New to WebPageTest - get an overview [here](https://www.webpagetest.org/).
 API key is required to use any WebPageTest API. Go to this [WebPageTest page](https://www.webpagetest.org/getkey.php) and add a valid email address and you will get the API key in your email inbox.
 
 ### Clone repo on local machine
-git clone https://github.com/comprodls-data/wpt-automation.git
+	> git clone https://github.com/comprodls-data/wpt-automation.git
 
 ### Copy webpagetest scripts
 After cloning the repo, copy webpagetest scripts to **wpt-scripts** folder. The extension of webpagetest scripts should be '.txt' only.
