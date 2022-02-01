@@ -1,0 +1,33 @@
+setActivityTimeout	20000
+setEventName	Student:Home Page
+navigate	https://qa.cambridgeone.org/home
+logData	1
+setEventName	Student:Login page
+execAndWait	document.getElementById('onboarding-header-login-btn').click();
+logData	2
+setEventName	Enter User Name
+setValue	placeholder=Enter your email address *	cupqastudent4@yopmail.com 
+execAndWait	document.getElementsByTagName('input')[0].dispatchEvent(new Event("input"));
+setEventName	Enter Password
+setValue	placeholder=Enter your password *	Compro11
+execAndWait	document.getElementsByTagName('input')[1].dispatchEvent(new Event("input"));
+logData	3
+setEventName	Student DB Page
+clickAndWait	value=Log in
+logData	4
+setEventName	Practice Extra
+execAndWait	document.querySelector('.practice-image [src="https://qa-content.cambridgeone.org/stage/final/bundles/evpel1_bundle/assets/evpel1/evolve_l1.png"]').click()
+clickAndWait	qid=cHeader-9
+logData	5
+setEventName	First Activity
+clickAndWait	title=Vocabulary: Countries and nationalities 1
+logData	6
+setEventName	Second Activity
+clickAndWait	title=Vocabulary: Countries and nationalities 2
+logData	7
+setEventName	Third Activity
+clickAndWait	title=Vocabulary: Countries and nationalities 3
+logData	8
+setEventName	Logout
+clickAndWait	qid=cHeader-3
+clickAndWait	qid=cHeader-7

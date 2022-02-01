@@ -1,0 +1,23 @@
+{
+  "name": "wptuatomation",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/script.js",
+    "run": "node test/script.js",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "author": "Manit Rustagi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "split-on-first": "^2.0.0",
+    "webpagetest": "^0.3.9",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

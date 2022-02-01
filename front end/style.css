@@ -1,0 +1,14 @@
+iframe {
+  margin-top: 5%;
+  border: 1px solid black;
+  width: 100%;
+  min-height: 48vh;
+}
+
+.snackbar {
+  background-color: rgb(233, 95, 95);
+  color: #fff;
+  padding: 1%;
+  margin-top: 2%;
+  border-radius: 6px;
+}

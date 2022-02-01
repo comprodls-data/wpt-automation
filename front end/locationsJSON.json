@@ -1,0 +1,170 @@
+{
+  "Dulles": {
+    "title": "Dulles, VA USA (Desktop, Android, iOS)",
+    "browsers": [
+      "Dulles_IE11",
+      "Dulles_Edge:Microsoft Edge (EdgeHTML)",
+      "Dulles_Edge:Microsoft Edge Dev (Chromium)",
+      "Dulles_Edge:Microsoft Edge Canary (Chromium)",
+      "Dulles:Chrome",
+      "Dulles:Canary",
+      "Dulles:Firefox",
+      "Dulles:Firefox Nightly",
+      "Dulles_MotoG:Moto G - Chrome",
+      "Dulles_MotoG:Moto G - Chrome Canary",
+      "Dulles_MotoG:Moto G - Chrome Beta",
+      "Dulles_MotoG:Moto G - Chrome Dev",
+      "Dulles_MotoG:Moto G - UC Browser",
+      "Dulles_MotoG:Moto G - UC Mini",
+      "Dulles_MotoG:Moto G - Opera Mini (Extreme)",
+      "Dulles_MotoG:Moto G - Opera Mini (High)",
+      "Dulles_MotoG:Moto G - Firefox",
+      "Dulles_MotoG4:Moto G4 - Chrome",
+      "Dulles_MotoG4:Moto G4 - Chrome Canary",
+      "Dulles_MotoG4:Moto G4 - Chrome Beta",
+      "Dulles_MotoG4:Moto G4 - Chrome Dev",
+      "Dulles_MotoG4:Moto G4 - Samsung Internet",
+      "Dulles_MotoG4:Moto G4 - UC Browser",
+      "Dulles_MotoG4:Moto G4 - UC Mini",
+      "Dulles_MotoG4:Moto G4 - Opera Mini (Extreme)",
+      "Dulles_MotoG4:Moto G4 - zOpera Mini (High)",
+      "Dulles_MotoG4:Moto G4 - Firefox",
+      "Dulles_Thinkpad:Chrome",
+      "Dulles_Thinkpad:Canary",
+      "Dulles_Thinkpad:Firefox",
+      "Dulles_Thinkpad:Firefox Beta",
+      "Dulles_Thinkpad:Firefox Nightly",
+      "Dulles_Thinkpad:Firefox ESR",
+      "Dulles_Thinkpad:Microsoft Edge (EdgeHTML)",
+      "Dulles_Thinkpad:Microsoft Edge Dev (Chromium)",
+      "Dulles_Thinkpad:Microsoft Edge Canary (Chromium)",
+      "Dulles_Thinkpad:IE 11",
+      "Dulles_Pi3:Chromium",
+      "Dulles_Pi3:Firefox",
+      "Dulles_Pi3:Firefox ESR",
+      "Dulles_Pi4:Chromium",
+      "Dulles_Pi4:Firefox",
+      "Dulles_Pi4:Firefox ESR"
+    ] 
+  },
+  "London": {
+    "title": "Londom, UK-EC2 (Chrome, Firefox)",
+    "browsers": [
+      "London_EC2:Chrome",
+      "London_EC2:Chrome Beta",
+      "London_EC2:Chrome Canary",	
+      "London_EC2:Firefox",
+      "London_EC2:Firefox Nightly"
+    ]
+  }, 
+  "Virginia": {
+    "title": "Virginia - EC2 (Chrome,Firefox)", 
+    "browsers": [
+      "ec2-us-east-1:Chrome",
+      "ec2-us-east-1:Chrome Beta",
+      "ec2-us-east-1:Chrome Canary",
+      "ec2-us-east-1:Firefox",
+      "ec2-us-east-1:Firefox Nightly",
+      "ec2-us-east-1:Firefox ESR"
+    ]
+  },
+  "Ireland": {
+    "title": "Ireland - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-us-west-1:Chrome",
+      "ec2-us-west-1:Chrome Beta",
+      "ec2-us-west-1:Chrome Canary",
+      "ec2-us-west-1:Firefox",
+      "ec2-us-west-1:Firefox Nightly",
+      "ec2-us-west-1:Firefox ESR"
+      ]
+  },
+  "Paris" : {
+    "title": " Paris - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-eu-west-3:Chrome",
+      "ec2-eu-west-3:Chrome Beta",
+      "ec2-eu-west-3:Chrome Canary",
+      "ec2-eu-west-3:Firefox",
+      "ec2-eu-west-3:Firefox Nightly",
+      "ec2-eu-west-3:Firefox ESR"
+      ]
+  },
+  "Frankfurt": {
+    "title": "Frankfurt, Germany - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-eu-central-1:Chrome",
+      "ec2-eu-central-1:Chrome Beta",
+      "ec2-eu-central-1:Chrome Canary",
+      "ec2-eu-central-1:Firefox",
+      "ec2-eu-central-1:Firefox Nightly",
+      "ec2-eu-central-1:Firefox ESR"
+      ]
+  },
+  "Seoul": {
+    "title": "Seoul, Korea - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-ap-northeast-2:Chrome",
+      "ec2-ap-northeast-2:Chrome Beta",
+      "ec2-ap-northeast-2:Chrome Canary",
+      "ec2-ap-northeast-2:Firefox",
+      "ec2-ap-northeast-2:Firefox Nightly",
+      "ec2-ap-northeast-2:Firefox ESR"
+      ]
+  },
+  "Tokyo": {
+    "title": "Tokyo, Japan - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-ap-northeast-1:Chrome",
+      "ec2-ap-northeast-1:Chrome Beta",
+      "ec2-ap-northeast-1:Chrome Canary",
+      "ec2-ap-northeast-1:Firefox",
+      "ec2-ap-northeast-1:Firefox Nightly",
+      "ec2-ap-northeast-1:Firefox ESR"
+    ]
+  },
+  "Mumbai": {
+    "title": "Mumbai, India - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ap-south-1:Chrome",
+      "ap-south-1:Chrome Beta",
+      "ap-south-1:Chrome Canary",
+      "ap-south-1:Firefox",
+      "ap-south-1:Firefox Nightly",
+      "ap-south-1:Firefox ESR"
+      ]
+  }, 
+  "Singapore": {
+    "title": "Singapore - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-ap-southeast-1:Chrome",
+      "ec2-ap-southeast-1:Chrome Beta",
+      "ec2-ap-southeast-1:Chrome Canary",
+      "ec2-ap-southeast-1:Firefox",
+      "ec2-ap-southeast-1:Firefox Nightly",
+      "ec2-ap-southeast-1:Firefox ESR"
+    ]
+  },
+  "Sydney": {
+    "title": "Sydney, Australia - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-ap-southeast-2:Chrome",
+      "ec2-ap-southeast-2:Chrome Beta",
+      "ec2-ap-southeast-2:Chrome Canary",
+      "ec2-ap-southeast-2:Firefox",
+      "ec2-ap-southeast-2:Firefox Nightly",
+      "ec2-ap-southeast-2:Firefox ESR"
+      ]
+  },
+  "Sao Paulo": {
+    "title": "Sao Paulo, Brazil - EC2 (Chrome,Firefox)",
+    "browsers": [
+      "ec2-sa-east-1:Chrome",
+      "ec2-sa-east-1:Chrome Beta",
+      "ec2-sa-east-1:Chrome Canary",
+      "ec2-sa-east-1:Firefox",
+      "ec2-sa-east-1:Firefox Nightly",
+      "ec2-sa-east-1:Firefox ESR"
+      ]
+  }
+}

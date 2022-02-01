@@ -1,0 +1,197 @@
+<html>
+<head>
+  <title>Web Page Test Automation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/04bd4bde53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-dark bg-primary mt-3 mt-md-3 mt-lg-3">
+      <a class="navbar-brand">COMPRO</a>
+    </nav>
+    <div class="row .no-gutters">
+      <div class="col-12">
+        <div id="accordion" role="tablist">
+          <div class="card">
+            <div class="card-header"  role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                  class="collapsed" onclick="showDefaultConfig()">
+                  <i id="arrow1" class="fas fa-chevron-right"></i>
+                  Run Test
+                </a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body row" id="response">
+                  <div class="col-12 col-md-6" id="defaultDiv" style="display: inline-block;">
+                    <div class="col-12" id="configDiv">
+                    </div>
+                    <div class="col-12 mt-md-3 mt-3">
+                      <button type="button" class="btn btn-primary btn-block" onclick="runDefault()">Run Test</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6" id="responsediv" style="display: inline-block;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                  class="collapsed">
+                  <i id="arrow2" class="fas fa-chevron-right"></i>
+                  Advanced Test Settings
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-body">
+                <form>
+                  <div class="form-group row">
+                    <label for="input0" class="col-sm-3 col-form-label">Test Title</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="test-title" class="form-control" id="input0" value="Ping Test">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input1" class="col-sm-3 col-form-label">Connection</label>
+                    <div class="col-sm-9">
+                      <select class="form-control" id="input1" name="connection">
+                        <option selected>Cable</option>
+                        <option>DSL</option>
+                        <option>3G Slow</option>
+                        <option>3G</option>
+                        <option>3G Fast</option>
+                        <option>4G</option>
+                        <option>LTE</option>
+                        <option>Moblie Edge</option>
+                        <option>2G</option>
+                        <option>56K Dial-Up</option>
+                        <option>FIOS</option>
+                        <option>Native Connection</option>
+                        <option>Custom</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input2" class="col-sm-3 col-form-label">Location</label>
+                    <div class="col-sm-9">
+                      <select class="form-control" id="input2" name="location" onchange="populateBrowsers()">
+                        <option>North America-Dulles</option>
+                        <option>Europe-London</option>
+                        <option>North America-Virginia</option>
+                        <option>Europe-Ireland</option>
+                        <option>Europe-Paris</option>
+                        <option>Europe-Frankfurt</option>
+                        <option>Asia-Seoul</option>
+                        <option>Asia-Tokyo</option>
+                        <option>Asia-Mumbai</option>
+                        <option selected>Asia-Singapore</option>
+                        <option>Oceania-Sydney</option>
+                        <option>South America-Sao Paulo</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input3" class="col-sm-3 col-form-label">Browser</label>
+                    <div class="col-sm-9">
+                      <select class="form-control" id="input3" name="browser">
+                        <option selected>Chrome</option>
+                        <option>Chrome Beta</option>
+                        <option>Chrome Canary</option>
+                        <option>Firefox</option>
+                        <option>Firefox Nightly</option>
+                        <option>Firefox ESR</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input4" class="col-sm-3 col-form-label">Repeat View</label>
+                    <div class="col-sm-9 d-flex">
+                      <div class="custom-control custom-radio p-2 flex-fill">
+                        <input type="radio" id="RepeatViewRadio1" name="RepeatViewRadio" value=true
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="RepeatViewRadio1">Yes </label>
+                      </div>
+                      <div class="custom-control custom-radio p-2 flex-fill">
+                        <input type="radio" id="RepeatViewRadio2" name="RepeatViewRadio" value=false  checked="checked"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="RepeatViewRadio2"> No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input5" class="col-sm-3 col-form-label">Test Runs</label>
+                    <div class="col-sm-9">
+                      <input type="number" name="testruns" class="form-control" id="input5" value="1" min="1" max="5">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input6" class="col-sm-3 col-form-label">Capture Video</label>
+                    <div class="col-sm-9 d-flex ">
+                      <div class="custom-control custom-radio p-2 flex-fill">
+                        <input type="radio" id="CaptureVideoRadio1" name="CaptureVideoRadio" value=true checked="checked"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="CaptureVideoRadio1">Yes </label>
+                      </div>
+                      <div class="custom-control custom-radio p-2 flex-fill">
+                        <input type="radio" id="CaptureVideoRadio2" name="CaptureVideoRadio" value=false
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="CaptureVideoRadio2"> No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Test type</label>
+                    <div class="col-sm-9 d-flex ">
+                      <div class="custom-control custom-radio p-2 flex-fill">
+                        <input type="radio" id="TestType1" name="TestType" value=true checked="checked"
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="TestType1">URL</label>
+                      </div>
+                      <div class="custom-control custom-radio p-2 flex-fill">
+                        <input type="radio" id="TestType2" name="TestType" value=false
+                          class="custom-control-input">
+                        <label class="custom-control-label" for="TestType2">Script</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="input7" class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9" id="scriptInput">
+                      <input type="url" name="testscript" class="form-control" id="input7" placeholder="Enter Test URL here"/>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" onclick="getconfig()">Run Test</button>
+                  </div>
+                </form>
+                <div class="row" id="responseAdv" style="display: none;">
+                  <div class="col-12 col-md-6" id="configDivAdv" style="display: inline-block;"></div>
+                  <div class="col-12 col-md-6" id="responsedivAdv" style="display: inline-block;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="script.js">
+  </script>
+</body>
+</html>
